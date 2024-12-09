@@ -1,0 +1,30 @@
+.wrapper1 {
+width: 100%;
+height: 100vh;
+background-color: black;
+display: flex;
+align-items: center;
+}
+
+.container1 {
+width: 100%;
+height: 400px;
+overflow: hidden;
+}
+
+.cards1 {
+display: flex;
+gap: 50px;
+padding: 0 50px;
+}
+
+.card1 {
+height: 100%;
+overflow: hidden;
+flex: 10 25%;
+}
+
+.card1 img {
+object-fit: cover;
+object-position: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroSmart</title>
+    <link rel="icon" href="l-modified.png" type="image/png">
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <div class="master-container">
+    <!-- Cart Section -->
+    <div class="card cart">
+      <label class="title">Your Cart</label>
+      <div class="products" id="cart-items">
+        <!-- Items will be dynamically rendered here -->
+      </div>
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total">₹0.00</span>
+      </div>
+    </div>
+  
+    <!-- Checkout Section -->
+    <div class="card checkout">
+      <label class="title">Checkout</label>
+      <div class="details">
+        <span>Your cart subtotal:</span>
+        <span id="subtotal-price">₹0.00</span>
+        <br>
+        <span>Shipping fees:</span>
+        <span id="shipping-price">₹50.00</span>
+      </div>
+      <div class="checkout--footer">
+        <label class="price"><sup>₹</sup><span id="total-price">50.00</span></label>
+        <button class="checkout-btn" onclick="proceedToCheckout()">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/addtocart.js"></script>
+</body>
+</html>

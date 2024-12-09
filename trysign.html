@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In - ORSCOPE TECHNOLOGIES</title>
+    <link rel="stylesheet" href="css/try.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Added Font Awesome -->
+</head>
+<body>
+
+<div class="container">
+    <div class="overlay" id="overlay">
+        <div class="sign-in" id="sign-in">
+            <img src="assets/log.png" height="auto" width="300">
+            <br>
+            <h1>Hello!</h1><br>
+            <p>Already have an account</p><br>
+            <button class="switch-button" onclick="swapForms('Log In')">Log In</button>
+        </div>
+
+        <div class="sign-up" id="sign-up">
+            <img src="assets/log.png" height="auto" width="300">
+            <br>
+            <h1>Welcome! Back</h1>
+            <p>Enter your personal details and come along again for a wonderful journey with us</p>
+            <button class="switch-button" onclick="swapForms('Sign Up')">Sign Up</button>
+        </div>
+    </div>
+
+
+    <div class="form">
+        <div class="sign-in" id="sign-in-info">
+            <br> <br> <br>
+            <h1>Log In</h1>
+            <br> <br>
+
+            <div class="social-media-buttons">
+                <div class="social-container">
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <span>Google</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p class="small">or use your email account:</p>
+        <form id="sign-in-form" action="login.php" method="post">
+                <input type="email" placeholder="Email" id="email" name="email"/>
+                <input type="password" placeholder="Password" id="password" name="password"/>
+                <p class="forgot-password">Forgot password?</p>
+                <button class="control-button in">Log In</button>
+            <br>
+        </form>
+        </div>
+
+        <div class="sign-up" id="sign-up-info">
+            <br>
+            <br>
+            <h1>Create Account</h1>
+            <br>
+            <div class="social-media-buttons">
+                <div class="social-container">
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <span>Google</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p class="small">or use your email for registration:</p>
+            <form id="sign-up-form" action="signup.php" method="post">
+                <input type="text" placeholder="Name" id="nm" name="nm"/>
+                <input type="email" placeholder="Email" id="email" name="email"/>
+                <input type="password" placeholder="Password" id="password" name="password"/>
+                <button class="control-button up" class="switch-button" onclick="swapForms('Log In')"
+                type="submit"  value="Sign Up" name="signUp">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/try.js"></script>
+</body>
+</html>
